@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../libraries/all.css">
+    <link rel="stylesheet" href="../../libraries/owl.carousel.min.css">
+</head>
+<body>
+    
+    <section class="services-section">
+        <div class="innder-width">
+            <h1>Our <strong>Services</strong></h1>
+            <div class="services owl-carousel">
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-name">Design</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="service-name">Edit Texts</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-name">Build Websites</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-name">Manage Databases</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                </div>
+
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="service-name">Support</div>
+                    <div class="service-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../libraries/jquery.js"></script>
+    <script src="../../libraries/owl.carousel.min.js"></script>
+    <script>
+        $(".services").owlCarousel({
+            margin: 20,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    </script>
+</body>
+</html>
