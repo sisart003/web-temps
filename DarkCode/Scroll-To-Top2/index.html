@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../libraries/all.css">
+</head>
+<body>
+    
+    <section>
+
+    </section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officia ullam aliquam facere unde quaerat aliquid, quasi animi dicta amet eius totam! Ex, nam error iste delectus fugiat quae hic!Asperiores sapiente officia quibusdam, facere ipsum recusandae quas ad numquam quis excepturi minima voluptate ab, amet eum iure aliquam dolores consequatur omnis illum fugit unde eligendi iusto nostrum doloribus? Voluptas?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae doloremque labore commodi dolore corporis quidem rem, quia repudiandae deleniti natus qui eos consequuntur ut assumenda iste porro nihil quibusdam!
+        Porro, ipsam odio illum cumque consequatur vero commodi rerum. Veritatis accusantium aspernatur ab consectetur ullam? Excepturi deserunt nisi vero. Illo vitae nulla aliquam ratione, quae repellendus mollitia hic nesciunt ex?
+        Consequatur odio praesentium ad itaque, sit unde a ipsum ut, repellendus quia sapiente optio in odit laboriosam nemo recusandae veritatis tempora reprehenderit soluta minus. Vero iusto tempora minus nobis blanditiis!
+        Sunt possimus deleniti dolores et tempora, pariatur vel ipsam eum consequuntur expedita porro eligendi ab libero optio unde nisi iure eaque, modi voluptate ex ratione excepturi. Tempora culpa debitis vel?
+    </p>
+
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../../libraries/jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 40){
+                    $('#topBtn').fadeIn();
+                }else{
+                    $('#topBtn').fadeOut();
+                }
+            });
+
+            $("#topBtn").click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+            });
+        });
+    </script>
+</body>
+</html>
