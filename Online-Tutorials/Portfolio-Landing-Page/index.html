@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>     
+        <div class="content">
+            <h2>Hello World, <br>I'm <span>SiSart003</span></h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam non mollitia, impedit at magnam natus perspiciatis voluptas saepe eos odit dolorem reiciendis molestiae quod nihil veniam nam fugiat necessitatibus amet?
+            Velit quisquam perferendis corrupti minus voluptatem debitis assumenda praesentium asperiores itaque, dolore consequatur maxime odit quo esse reiciendis obcaecati recusandae eligendi nostrum facilis beatae veniam sit non minima laborum. Accusantium?
+            Non minus architecto eum ullam maxime quod unde! Veniam vitae eos velit numquam quisquam? Qui incidunt omnis odit perspiciatis, error ratione sunt dicta, sit unde, quaerat deleniti quidem nihil laudantium?</p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="../../img/14.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../img/17.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../../img/18.jpg" alt=""></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
